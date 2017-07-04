@@ -18,6 +18,11 @@ android {
     defaultConfig {
         applicationId = doExtractStringFromManifest("package")
     }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/rxjava.properties'
+    }
 }
 
 dependencies { 
